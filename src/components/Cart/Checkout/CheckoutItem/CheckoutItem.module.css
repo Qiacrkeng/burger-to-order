@@ -1,0 +1,38 @@
+/* 大框 */
+.CheckoutItem {
+  display: flex;
+}
+/* 食物圖片 */
+.MealImg {
+  width: 140rem;
+}
+.MealImg img {
+  max-width: 100%;
+}
+/* 食物描述 */
+.Desc {
+  flex: auto;
+  margin-left: 20rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+/* 食物標題 */
+.Title {
+  font-size: 24rem;
+}
+/* 價格 */
+.PriceOuter {
+  display: flex;
+  justify-content: space-between;
+}
+/* 右邊的當前食物總價 */
+.Price {
+  font-size: 26rem;
+  font-weight: bold;
+}
+.Price::before {
+  content: "￥";
+  font-weight: normal;
+  font-size: 24rem;
+}

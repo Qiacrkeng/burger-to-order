@@ -1,0 +1,12 @@
+/* 撲滿整個頁面 */
+.Backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* 作為遮罩 */
+  background-color: rgba(0, 0, 0, 0.3);
+  /* 底部合計蘭z軸大於本 */
+  z-index: 999;
+}

@@ -1,0 +1,44 @@
+/* 外部包含的遮罩 */
+.ConfirmOuter {
+  z-index: 9999;
+}
+/* 大框 */
+.Confirm {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* 相對於遮罩層 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* 主要的部分，設置寬高 */
+  width: 700rem;
+  height: 300rem;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 20px;
+}
+/* 確認框描述內容 */
+.ConfirmText {
+  font-size: 38rem;
+}
+/* 確認與取消按鈕 */
+.Cancel,
+.Ok {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 180rem;
+  height: 60rem;
+  border-radius: 20px;
+  font-size: 28rem;
+}
+/* 確認按鈕單獨上一個顏色 */
+.Ok {
+  background-color: #fcbf49;
+  border: none;
+  /* 與取消按鈕設置一點間隔 */
+  margin-left: 50rem;
+}

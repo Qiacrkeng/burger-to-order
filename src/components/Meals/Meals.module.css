@@ -1,0 +1,11 @@
+.Meals {
+  position: absolute;
+  /* 輸入框的高度為120rem */
+  top: 120rem;
+  /* 撲滿 */
+  bottom: 0;
+  /* 滾動條在食物框上 */
+  overflow: auto;
+  /* 多留一點空隙 */
+  padding-bottom: 120rem;
+}

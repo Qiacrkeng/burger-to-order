@@ -1,0 +1,52 @@
+/* 每一個食物組件 */
+.Meal {
+  display: flex;
+  align-items: center;
+  padding: 30rem 20rem;
+  /* 看起來有分隔線 */
+  border-bottom: 1px #f2f2f2 solid;
+}
+/* 食物圖像大小 */
+.ImgBox {
+  width: 280rem;
+}
+.ImgBox img {
+  max-width: 100%;
+}
+
+.DescBox {
+  flex: auto;
+}
+/* 商品名 */
+.Title {
+  font-weight: normal;
+  font-size: 36rem;
+  /* h2標籤是有默認的外邊距 */
+  margin: 0;
+}
+/* 如果有食物詳情 */
+.Desc {
+  margin: 0;
+  color: #bbb;
+  font-size: 24rem;
+  /* 文本右邊留點空隙 */
+  padding-right: 40rem;
+}
+/* 包含價格的框 */
+.PriceWrap {
+  margin-top: 40rem;
+  padding-right: 40rem;
+  display: flex;
+  /* 兩端對齊 */
+  justify-content: space-between;
+}
+/* 顯示價格 */
+.Price {
+  font-weight: bold;
+  font-size: 36rem;
+}
+/* 插入中文價格標誌 */
+.Price::before {
+  content: "￥";
+  font-size: 24rem;
+}

@@ -1,0 +1,30 @@
+/* 本身大框 */
+.Counter {
+  display: flex;
+  align-items: center;
+}
+/* 添加，減少按鈕 */
+.Add,
+.Sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #fcbf49;
+  border-radius: 50%;
+  width: 36rem;
+  height: 36rem;
+  font-size: 28rem;
+  padding: 0;
+}
+/* 减号颜色相反 */
+.Sub {
+  background-color: white;
+  border: 1px solid black;
+}
+/* 中间的数字 */
+.count {
+  font-size: 32rem;
+  /* 两侧留一点空隙 */
+  margin: 0 5px;
+}

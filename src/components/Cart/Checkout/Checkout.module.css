@@ -1,0 +1,64 @@
+/* 结算对话框大框 */
+.Checkout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* 显示最靠前 */
+  z-index: 9999;
+  background-color: #eee;
+  padding: 20rem;
+}
+/* 关闭按钮 */
+.Close {
+  color: #000;
+  font-size: 36rem;
+}
+/* 食物列表 */
+.MealsDesc {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0 20rem;
+}
+/* 食物列表標題 */
+.Header {
+  display: flex;
+  border-bottom: 1px solid #f2f2f2;
+  height: 80rem;
+  align-items: center;
+  font-size: 20rem;
+}
+.Footer {
+  position: relative;
+  height: 120rem;
+  font-weight: bold;
+  border-top: 1px dashed #f2f2f2;
+  /* 文本在主軸尾部 */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+/* 合計的左上角和右上角留孔 */
+.Footer::before,
+.Footer::after {
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background-color: #eee;
+  border-radius: 50%;
+  top: -10rem;
+  left: -30rem;
+}
+.Footer::after {
+  left: auto;
+  right: -30rem;
+}
+/* 加上合計文本 */
+.TotalPrice::before {
+  content: "合計￥";
+  font-weight: normal;
+  font-size: 18rem;
+  margin-right: 10rem;
+}

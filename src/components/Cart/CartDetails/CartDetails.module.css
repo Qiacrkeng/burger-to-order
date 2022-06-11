@@ -1,0 +1,44 @@
+/* 大框 */
+.CartDetails {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  max-height: 1200rem;
+  background: #fff;
+  bottom: 0;
+  /* 底部欄上邊 */
+  padding-bottom: 120rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+/* 清空購物車 */
+.Clear {
+  /* 標誌顏色 */
+  color: #aaa;
+  /* 不然太小看不見 */
+  font-size: 24rem;
+  cursor: pointer;
+}
+/* 字和圖標有一點空隙 */
+.Clear span {
+  margin-left: 12rem;
+}
+/* 食物列表 */
+.MealList {
+  /* 如果內容太多讓它滾動 */
+  overflow: auto;
+}
+/* 購物車列表的頭 */
+.Header {
+  display: flex;
+  /* 另一端放置圖標 */
+  justify-content: space-between;
+  padding: 30rem;
+}
+/* 購物車列表的標題 */
+.Title {
+  font-weight: bold;
+  font-size: 28rem;
+  margin: 0;
+}
