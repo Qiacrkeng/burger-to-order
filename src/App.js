@@ -110,6 +110,7 @@ const App = () => {
 
     setCartData(newCart);
   };
+
   return (
     // 應該說是添加數據
     <CartContext.Provider value={{ ...cartData, removeItem, addItem }}>
